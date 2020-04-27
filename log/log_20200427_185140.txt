@@ -1,0 +1,1 @@
+2020-04-27 18:51:40,726 main initialiser_log utilitaire # 1 pour MongoDB ; log initialisé.
