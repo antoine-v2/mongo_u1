@@ -17,8 +17,9 @@ def un_traitement(data, valeurs_rempl = None):
     print('chemin_modele : {}'.format(chemin_modele))
     fic_cible = data['fic_cible']
     balise_fic_cible = extraire_balise(fic_cible)
-    valeur_balise = int(balise_fic_cible)
-    balise_fic_cible = '{{' + balise_fic_cible + '}}'
+    if balise_fic_cible != '':
+        valeur_balise = int(balise_fic_cible)
+        balise_fic_cible = '{{' + balise_fic_cible + '}}'
     # lire le contenu du modèle et générer les "data conf", à partir desquelles on pourra générer le(s) fichier(s)
     data_conf = generer_data_conf(chemin_modele, data)
     # générer les x fichiers voulus (paramètre traitements.nombre)

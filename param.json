@@ -13,6 +13,30 @@
                 "db_path" : "rep_lab/db/cs{{1}}"
             },
             "nombre" : 3
+        },
+        {
+            "fic_modele" : "modele_mongos.conf",
+            "fic_cible" : "mongos.conf",
+            "balises" : {
+                "cluster_role" : "configsvr",
+                "replica_set_name" : "m103-test",
+                "port" : "26000",
+                "log_path" : "rep_lab/db/mongos.log",
+                "db_path" : "rep_lab/db/mongos"
+            },
+            "nombre" : 1
+        },
+        {
+            "fic_modele" : "modele_shardserver.conf",
+            "fic_cible" : "shard1_node{{1}}.conf",
+            "balises" : {
+                "cluster_role" : "shardsvr",
+                "replica_set_name" : "m103-test",
+                "port" : "2700{{1}}",
+                "log_path" : "rep_lab/db/shard1_node{{1}}.log",
+                "db_path" : "rep_lab/db/shard1_node{{1}}"
+            },
+            "nombre" : 3
         }
     ]
 }
