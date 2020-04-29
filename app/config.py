@@ -1,8 +1,8 @@
 # variables globales
 
 appli_nom = 'utilitaire # 1 pour MongoDB'
-appli_version = '0'
-appli_date = '2020/04/27'
+appli_version = '1.0'
+appli_date = '2020/04/30'
 appli_auteur = 'Antoine Marger'
 appli_python_version = '3.7.3'
 

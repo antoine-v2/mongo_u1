@@ -5,15 +5,13 @@
         {
             "fic_modele" : "modele_configserver.conf",
             "fic_cible" : "cs{{1}}.conf",
-            "balises" : [
-                {
-                    "cluster_role" : "configsvr",
-                    "replica_set_name" : "m103-test",
-                    "port" : "2600{{1}}",
-                    "log_path" : "rep_lab/db/cs{{1}}.log",
-                    "db_path" : "rep_lab/db/cs{{1}}"
-                }
-            ],
+            "balises" : {
+                "cluster_role" : "configsvr",
+                "replica_set_name" : "m103-test",
+                "port" : "2600{{1}}",
+                "log_path" : "rep_lab/db/cs{{1}}.log",
+                "db_path" : "rep_lab/db/cs{{1}}"
+            },
             "nombre" : 3
         }
     ]

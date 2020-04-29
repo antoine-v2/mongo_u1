@@ -31,7 +31,6 @@ def alimenter_fichier(chemin_fic, donnees):
 
 def alimenter_fichier_chaine(chemin_fic, chaine):
     try:
-        # with open(chemin_fic, 'w') as fic:
         with open(chemin_fic, 'a') as fic:
             fic.write(chaine + '\n')
     except FileNotFoundError:
